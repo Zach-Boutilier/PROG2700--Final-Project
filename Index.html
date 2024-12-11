@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Guessing Game</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="Style.css">
+  <script src="events.js"></script>
+</head>
+<body>
+    <div class="titlebox">
+      <h1 class="title">Pokémon Guessing Game</h1>
+    </div>
+
+      <div class="pregame">
+
+          <div class="container">
+
+              <label>Choose Generations to Guess:</label><br><hr>
+
+                  <div class="checkboxBox" id="Generations">
+                      <input id="Generation1" type="checkbox" value="0" for="Generation1">Gen 1</input>
+                      <input id="Generation2" type="checkbox" value="1" for="Generation2">Gen 2</input>
+                      <input id="Generation3" type="checkbox" value="2" for="Generation3">Gen 3</input><br>
+                      <input id="Generation4" type="checkbox" value="3" for="Generation4">Gen 4</input>
+                      <input id="Generation5" type="checkbox" value="4" for="Generation5">Gen 5</input>
+                      <input id="Generation6" type="checkbox" value="5" for="Generation6">Gen 6</input><br>
+                      <input id="Generation7" type="checkbox" value="6" for="Generation7">Gen 7</input>
+                      <input id="Generation8" type="checkbox" value="7" for="Generation8">Gen 8</input> 
+                      <input id="Generation9" type="checkbox" value="8" for="Generation9">Gen 9</input><br>
+                      <input id="Generation0" type="checkbox" value="9" for="Generation+">Others</input><br><hr>
+                      <label>You have 6 guesses!!</label>
+                      <button id="pressplay" class="playBtn">Play</button>
+                  </div>
+
+          </div><br>
+          
+      </div>
+
+          <div id="guessArea" class="gamescreen">
+
+            <div class="guess-box">
+              <input type="text" id="guess-input" placeholder="Enter your guess"><br><hr>
+              <div id="wrong"></div>
+              <button id="submit-btn">Submit</button>            
+              <div class="guesses"></div>
+            </div>
+
+            <div class="sidebar">
+              <div class="name" id="name">____________</div><hr>
+                <div class="image-container">
+                  <img id="image-here" alt="Placeholder Image">
+                </div>
+                <hr>
+                <div class="table-container">
+                  <table class="table-flavor">
+                      <thead>
+                        <br>
+                          <tr>
+                            <th class="table-column1">Types:</th>
+                            <th class="table-column2" id="types"></th>
+                          </tr>
+                          <tr>
+                            <th class="table-column1">Dex number</th>
+                            <th class="table-column2" id="id"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                            <td class="table-text">HP</td>
+                            <td class="table-stat" id="stat-hp"></td>
+                          </tr>
+                          <tr>
+                            <td class="table-text">Attack</td>
+                            <td class="table-stat" id="stat-attack"></td>
+                          </tr>
+                          <tr>
+                            <td class="table-text">Defence</td>
+                            <td class="table-stat" id="stat-defense"></td>
+                          </tr>
+                          <tr>
+                            <td class="table-text">Sp.Attack</td>
+                            <td class="table-stat" id="stat-special-attack"></td>
+                          </tr>
+                          <tr>
+                            <td class="table-text">Sp.Defence</td>
+                            <td class="table-stat" id="stat-special-defense"></td>
+                          </tr>
+                          <tr>
+                            <td class="table-text">Speed</td>
+                            <td class="table-stat" id="stat-speed"></td>
+                          </tr>
+                          <tr>
+                            <td class="table-text">Base Stat Total</td>
+                            <td class="table-stat" id="stat-bst"></td>
+                          </tr>
+                          <tr>
+                            <td class="table-text">Ability 1</td>
+                            <td class="table-text" id="ability-1"></td>
+                          </tr>
+                          <tr>
+                            <td class="table-text">Ability 2</td>
+                            <td class="table-text" id="ability-2"></td>
+                          </tr>
+                          <tr>
+                            <td class="table-text">Hidden Ability</td>
+                            <td class="table-text" id="hidden-ability"></td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                      </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+      <script src="Main.js"></script>
+
+</body>
